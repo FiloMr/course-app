@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import nemo from "./nemo.jpg";
 function SkladniaSkryptuIRenderowanegoElementu(props) {
   function formatName(user) {
     return user.firstName + " " + user.lastName;
@@ -15,15 +16,14 @@ function SkladniaSkryptuIRenderowanegoElementu(props) {
   };
 
   const user = {
+    avatarURL: nemo,
     firstName: "Filip",
     lastName: "Mroz",
-    avatarURL:
-      "https://cdn.pixabay.com/photo/2016/06/13/10/06/clownfish-1453910_960_720.jpg",
   };
 
   const element = (
     <div>
-      <h1>{getGreeting(user)}</h1> <img src={user.avatarURL} />{" "}
+      <h1><img src={user.avatarURL} /> {getGreeting(user)}</h1>{" "}
     </div>
   );
   const rootCreate = ReactDOM.createRoot(document.getElementById("box"));

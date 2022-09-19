@@ -11,7 +11,8 @@ import RenderowanieElementu from "./RenderowanieElementu";
 const root = ReactDOM.createRoot(document.getElementById("box"));
 root.render(
   <React.StrictMode>
-    <RenderowanieElementu />
+    <SkladniaSkryptuIRenderowanegoElementu /> */Wybierz jaki komponent chcesz renderować z tych
+    co zaimportowałeś*/
   </React.StrictMode>
 );
 
