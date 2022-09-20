@@ -8,11 +8,17 @@ import SkladniaSkryptuIRenderowanegoElementu from "./SkladniaSkryptuIRenderowane
 import AktualizowanieRenderowanegoElementu from "./AktualizowanieRenderowanegoElementu";
 import KomponentyFunkcyjneIKlasowe from "./KomponentyFunkcyjneIKlasowe";
 import RenderowanieElementu from "./RenderowanieElementu";
+import Clock from "./StanIMetodyCykluZycia";
+import LoggingButton from "./ObslugaZdarzenKlasa";
+import Toggle from "./ObslugaZdarzenFunkcja";
+import RenderowanieWarunkowe from "./RenderowanieWarunkowe";
+import NameForm from "./FormBasic";
+import FlavorForm from "./FomrSelect";
+import Reservation from "./FormCheck";
 const root = ReactDOM.createRoot(document.getElementById("box"));
 root.render(
   <React.StrictMode>
-    <SkladniaSkryptuIRenderowanegoElementu /> */Wybierz jaki komponent chcesz renderować z tych
-    co zaimportowałeś*/
+    <Reservation />
   </React.StrictMode>
 );
 
