@@ -15,10 +15,11 @@ import RenderowanieWarunkowe from "./RenderowanieWarunkowe";
 import NameForm from "./FormBasic";
 import FlavorForm from "./FomrSelect";
 import Reservation from "./FormCheck";
+import Calculator from "./PrzekazywanieDanychKalkulator";
 const root = ReactDOM.createRoot(document.getElementById("box"));
 root.render(
   <React.StrictMode>
-    <Reservation />
+    <Calculator />
   </React.StrictMode>
 );
 
